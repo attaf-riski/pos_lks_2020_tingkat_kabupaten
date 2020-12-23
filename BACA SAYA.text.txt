@@ -1,0 +1,17 @@
+# yang ada dalam paket ini adalah
+1. projek vb / solution 
+2. ERD
+3. database / .bak
+
+
+#projek ini dibuat dengan
+1. visual studio community 2015
+2. MS SQL Server Express
+3. MS SQL Management Studio
+4. Visio 2013
+
+
+#Cara Menggunakan projek ini
+1. Backup 'pos_database.bak' di MS SQL Management Studio
+2. Ganti nama connection string di projek vb sesuai di laptop kalian
+3. jalanakan software di visual studio

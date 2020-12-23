@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CE9E608-FEEC-4971-A604-624B891DB853}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>POS_Penjualan.My.MyApplication</StartupObject>
+    <RootNamespace>POS_Penjualan</RootNamespace>
+    <AssemblyName>POS_Penjualan</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>POS_Penjualan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>POS_Penjualan.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="service\berbagi.vb" />
+    <Compile Include="service\koneksi.vb" />
+    <Compile Include="ui\admiin\barang.Designer.vb">
+      <DependentUpon>barang.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\barang.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\barangKelola.Designer.vb">
+      <DependentUpon>barangKelola.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\barangKelola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\konsumenKelola.Designer.vb">
+      <DependentUpon>konsumenKelola.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\konsumenKelola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\koonsumen.Designer.vb">
+      <DependentUpon>koonsumen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\koonsumen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\laporan\lapPembelian.Designer.vb">
+      <DependentUpon>lapPembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\laporan\lapPembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\laporan\lapPenjualan.Designer.vb">
+      <DependentUpon>lapPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\laporan\lapPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\laporan\lapReturPengembalian.Designer.vb">
+      <DependentUpon>lapReturPengembalian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\laporan\lapReturPengembalian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\laporan\lapReturPenjualan.Designer.vb">
+      <DependentUpon>lapReturPenjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\laporan\lapReturPenjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\pemasok.Designer.vb">
+      <DependentUpon>pemasok.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\pemasok.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\pemasokKelola.Designer.vb">
+      <DependentUpon>pemasokKelola.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\pemasokKelola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\user.Designer.vb">
+      <DependentUpon>user.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\user.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\admiin\userKelola.Designer.vb">
+      <DependentUpon>userKelola.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\admiin\userKelola.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\menuTemplate.Designer.vb">
+      <DependentUpon>menuTemplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\menuTemplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\petugas\pembelian.Designer.vb">
+      <DependentUpon>pembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\petugas\pembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\petugas\penjualan.Designer.vb">
+      <DependentUpon>penjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\petugas\penjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\petugas\retur_pembelian.Designer.vb">
+      <DependentUpon>retur_pembelian.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\petugas\retur_pembelian.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\petugas\retur_penjualan.Designer.vb">
+      <DependentUpon>retur_penjualan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\petugas\retur_penjualan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\splashScreen.Designer.vb">
+      <DependentUpon>splashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\splashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ui\welcome.Designer.vb">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ui\welcome.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\barang.resx">
+      <DependentUpon>barang.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\barangKelola.resx">
+      <DependentUpon>barangKelola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\konsumenKelola.resx">
+      <DependentUpon>konsumenKelola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\koonsumen.resx">
+      <DependentUpon>koonsumen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\laporan\lapPembelian.resx">
+      <DependentUpon>lapPembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\laporan\lapPenjualan.resx">
+      <DependentUpon>lapPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\laporan\lapReturPengembalian.resx">
+      <DependentUpon>lapReturPengembalian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\laporan\lapReturPenjualan.resx">
+      <DependentUpon>lapReturPenjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\pemasok.resx">
+      <DependentUpon>pemasok.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\pemasokKelola.resx">
+      <DependentUpon>pemasokKelola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\user.resx">
+      <DependentUpon>user.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\admiin\userKelola.resx">
+      <DependentUpon>userKelola.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\menuTemplate.resx">
+      <DependentUpon>menuTemplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\petugas\pembelian.resx">
+      <DependentUpon>pembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\petugas\penjualan.resx">
+      <DependentUpon>penjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\petugas\retur_pembelian.resx">
+      <DependentUpon>retur_pembelian.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\petugas\retur_penjualan.resx">
+      <DependentUpon>retur_penjualan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\splashScreen.resx">
+      <DependentUpon>splashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ui\welcome.resx">
+      <DependentUpon>welcome.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gs1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gl1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gm1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\human.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\welcomeee.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
